@@ -1,0 +1,35 @@
+# grammar
+#-gram ./dic/greet/greet
+#-h grammar-kit/model/phone_m/hmmdefs_ptm_gid.binhmm
+#-hlist grammar-kit/model/phone_m/logicalTri
+
+
+# dictation
+-d ../julius-4.5/dictation-kit-4.5/model/lang_m/bccwj.60k.bingram
+-v ../julius-4.5/dictation-kit-4.5/model/lang_m/bccwj.60k.htkdic
+-v ../julius-4.5/dictation-kit-4.5/model/lang_m/bccwj.60k.pdp.htkdic
+-h ../julius-4.5/dictation-kit-4.5/model/dnn/binhmm.SID
+-hlist ../julius-4.5/dictation-kit-4.5/model/dnn/logicalTri.bin
+-lmp  14 0
+-lmp2 14 0
+-b 1500
+-b2 100
+-s 500
+-m 10000
+-n 30
+-output 1		# ��2�p�X�Ō����������̂����o�͂��鐔 �i�����j
+-rejectshort 800	# �w��~���b�ȉ��̒����̓��͂����p����
+
+#-input mfcfile		# HTK�`���̃p�����[�^�t�@�C��(MFCC) 
+#-input rawfile		# �����g�`�f�[�^�t�@�C��(�t�H�[�}�b�g��������)
+#-filelist inputfile.txt	# �F���Ώۃt�@�C���̃��X�g
+
+-input mic		# �}�C�N���璼�ړ���
+
+-nostrip		# �[�������̖����ȓ��͕��̏�����OFF�ɂ���
+			# (default: �����ȓ��͕����͏��������)
+#-zmean			# DC�����̏������s�� (-input mfcfile������)
+-zmeanframe		# �t���[���P�ʂ�DC�����������s�� (HTK�Ɠ�����)
+
+
+#-smpFreq 44100		# �T���v�����O���g��(Hz)

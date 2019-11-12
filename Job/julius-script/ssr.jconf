@@ -1,0 +1,22 @@
+-d ../julius-4.5/ssr-kit-v4.5/models/csj.bingram
+-v ../julius-4.5/ssr-kit-v4.5/models/csj.pdp.htkdic
+-h ../julius-4.5/ssr-kit-v4.5/models/binhmm.SID
+-hlist ../julius-4.5/ssr-kit-v4.5/models/logicalTri.bin
+-lmp  14 0
+-lmp2 14 0
+-silhead '#0'
+-siltail '#1'
+-b 1500
+-b2 100
+-s 500
+-m 10000
+-n 10
+-output 1
+-spmodel "sp_S"
+-spsegment
+-zmeanframe
+-rejectshort 500
+-input mic
+-lv 800
+-fvad 3
+-charconv SJIS UTF-8
