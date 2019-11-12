@@ -142,8 +142,7 @@ def detection(recfile, cnt, model, view):
             print(sentence)
             for (res,c) in zip(result,cms):
                 if res in NGwords and c>threshold:
-                    print(' <!>   A R E R T   <!>')
-                    # upload to server
+                    print(' [!]   This will be on test   [!]')
                     up2server()
                     cnt.value = 0
 
